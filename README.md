@@ -6,6 +6,11 @@ using the GitHub API `/repos/${owner}/${repo}/contributors` endpoint.
 
 _Only_ outputs an `authors` block; the rest of the file is up to you!
 
+> [!WARNING]
+> Does not recognize non-code contributions.
+> [**All contributors deserve to be acknowledged**](https://book.the-turing-way.org/community-handbook/acknowledgement/)!
+> See the Limitations section below for more.
+
 
 ## Dependencies
 
