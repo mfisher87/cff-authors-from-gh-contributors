@@ -46,14 +46,17 @@ authors:
 * CFF `authors` block printed to stdout, all other messages to stderr.
   You can pipe to a clipboard tool, for example
   `node cff-authors-from-gh-contributors.js | xclip -sel cl`
-* Use the GitHub username as `alias`.
-* Use the GitHub user profile's "name" field, if present, as `given-names` and
-  `family-names` with very naive string parsing.
-  **Expect to hand-edit the output a bit**.
-  The string is split by spaces, and the last element is used for the `family-names`,
-  all other elements are used for `given-names`.
-* Use the GitHub user profile's "e-mail" field, if present, as `email`.
-* Use the GitHub user profile's "blog" field, if present, as `website`.
+* Number of contributions included as a comment (you may want to delete this)
+* Output sorted by number of contributions
+* Fields:
+    * Use the GitHub username as `alias`
+    * Use the GitHub user profile's "name" field, if present, as `given-names` and
+      `family-names` with very naive string parsing.
+      **Expect to hand-edit the output a bit**.
+      The string is split by spaces, and the last element is used for the `family-names`,
+      all other elements are used for `given-names`.
+    * Use the GitHub user profile's "e-mail" field, if present, as `email`
+    * Use the GitHub user profile's "blog" field, if present, as `website`
 
 
 ## Limitations
