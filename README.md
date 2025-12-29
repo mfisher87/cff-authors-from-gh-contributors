@@ -22,6 +22,24 @@ Review the output, especially `family-names` and `given-names`, for correctness.
 The output is sorted by number of contributions; you may want to re-order.
 
 
+### Example
+
+```bash
+$ node cff-authors-from-gh-contributors.js mfisher87 cff-authors-from-gh-contributors
+Fetching contributors for: mfisher87/cff-authors-from-gh-contributors
+Total unique contributors: 1
+.
+
+Citation File Format `authors` block:
+
+authors:
+  # Contributions: 2
+  - given-names: "Matt"
+    family-names: "Fisher"
+    alias: "mfisher87"
+    website: "https://mfisher87.github.io/"
+```
+
 
 ## Features
 
