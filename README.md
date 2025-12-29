@@ -19,8 +19,8 @@ node cff-authors-from-gh-contributors.js <owner> <repo> [github-token]
 ```
 
 Review the output, especially `family-names` and `given-names`, for correctness.
+The output is sorted by number of contributions; you may want to re-order.
 
-The output is sorted by number of contributions.
 
 
 ## Features
