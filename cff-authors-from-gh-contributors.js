@@ -184,11 +184,18 @@ async function main() {
     process.stderr.write(
       styleText(
         ['green', 'bold'],
-        '\n\nTotal unique contributors: ',
-      ) + contributors.length
+        '\nTotal unique contributors: ',
+      ) + contributors.length + '\n'
     );
 
     const cffContent = await generateCFF(owner, repo, contributors);
+    process.stderr.write(
+      styleText(
+        ['green', 'bold'],
+        '\nCitation File Format `authors` block:\n\n',
+      )
+    );
+
     process.stdout.write(cffContent);
   } catch (error) {
     process.stderr.write(
