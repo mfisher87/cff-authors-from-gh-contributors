@@ -180,7 +180,6 @@ async function main() {
       ) + `${owner}/${repo}`
     );
 
-    // Fetch all contributors
     const contributors = await getGitHubContributors(owner, repo);
     process.stderr.write(
       styleText(
